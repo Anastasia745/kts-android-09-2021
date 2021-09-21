@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Unsplash</string>
-    <string name="hello_portrait">Welcome to Unsplash!</string>
-    <string name="hello_landscape">Welcome to Unsplash!</string>
+    <string name="welcome_text">Welcome to Unsplash!</string>
     <string name="login">LOGIN</string>
 </resources>

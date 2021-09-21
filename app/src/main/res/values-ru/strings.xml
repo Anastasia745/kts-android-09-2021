@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Unsplash</string>
-    <string name="hello_portrait">Добро\nпожаловать!</string>
-    <string name="hello_landscape">Добро пожаловать!</string>
+    <string name="welcome_text">Добро пожаловать!</string>
     <string name="login">ВОЙТИ</string>
 </resources>
