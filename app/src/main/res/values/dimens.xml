@@ -2,4 +2,9 @@
 <resources>
     <dimen name="text_view_welcome_width">330dp</dimen>
     <dimen name="text_view_welcome_height">130dp</dimen>
+    <dimen name="text_view_welcome_size">48sp</dimen>
+    <dimen name="text_view_login_width">200dp</dimen>
+    <dimen name="text_view_login_height">80dp</dimen>
+    <dimen name="text_input_login_width">300dp</dimen>
+    <dimen name="text_input_login_height">60dp</dimen>
 </resources>

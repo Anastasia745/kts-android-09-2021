@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Unsplash</string>
     <string name="welcome_text">Welcome to Unsplash!</string>
-    <string name="login">LOGIN</string>
+    <string name="login_button">LOGIN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Login</string>
+    <string name="input_email">Email</string>
+    <string name="input_password">Password</string>
+    <string name="signIn_button">SignIn</string>
+    <string name="main">Main</string>
 </resources>

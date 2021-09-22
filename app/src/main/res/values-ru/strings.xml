@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Unsplash</string>
     <string name="welcome_text">Добро пожаловать!</string>
-    <string name="login">ВОЙТИ</string>
+    <string name="login_button">ВОЙТИ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Вход</string>
+    <string name="input_email">Email</string>
+    <string name="input_password">Пароль</string>
+    <string name="signIn_button">Войти</string>
+    <string name="main">Главная</string>
 </resources>
