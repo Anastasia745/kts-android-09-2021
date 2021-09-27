@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Unsplash</string>
-    <string name="welcome_text">Добро пожаловать!</string>
-    <string name="login_button">ВОЙТИ</string>
+    <string name="onboaring_fragment_welcome_text">Добро пожаловать!</string>
+    <string name="onboaring_fragment_login_button">ВОЙТИ</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="login">Вход</string>
-    <string name="input_email">Email</string>
-    <string name="input_password">Пароль</string>
-    <string name="signIn_button">Войти</string>
-    <string name="main">Главная</string>
+    <string name="login_fragment_header">Вход</string>
+    <string name="login_fragment_input_email_hint">Email</string>
+    <string name="login_fragment_input_password_hint">Пароль</string>
+    <string name="login_fragment_signIn_button">Войти</string>
+    <string name="main_fragment_main">Главная</string>
 </resources>
