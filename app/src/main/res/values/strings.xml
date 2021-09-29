@@ -2,10 +2,13 @@
     <string name="app_name">Unsplash</string>
     <string name="onboaring_fragment_welcome_text">Welcome to Unsplash!</string>
     <string name="onboaring_fragment_login_button">LOGIN</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="onboaring2_fragment_text">The internet’s source of freely-usable images.\nPowered by creators everywhere.</string>
+    <string name="onboaring3_fragment_title">Free high-resolution Unsplash photos</string>
+    <string name="onboaring3_fragment_text">Unsplash has over a million free high-resolution photos. All photos here are free to download and use under the Unsplash License.</string>
     <string name="login_fragment_header">Login</string>
     <string name="login_fragment_input_email_hint">Email</string>
     <string name="login_fragment_input_password_hint">Password</string>
     <string name="login_fragment_signIn_button">SignIn</string>
     <string name="main_fragment_main">Main</string>
+
 </resources>

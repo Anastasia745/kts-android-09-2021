@@ -22,10 +22,23 @@ class Onboarding : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_onboarding, container, false)
-        view.findViewById<Button>(R.id.buttonLogin).setOnClickListener { Navigation.findNavController(view).navigate(R.id.login)}
         Timber.d("Onboarding onCreateView ${hashCode()}")
-        return view
+        return inflater.inflate(R.layout.fragment_onboarding, container, false)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.d("Onboarding onResume ${hashCode()}")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.d("Onboarding onPause ${hashCode()}")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.d("Onboarding onStop ${hashCode()}")
     }
 
     override fun onDestroyView()

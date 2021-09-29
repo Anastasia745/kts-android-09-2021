@@ -50,6 +50,21 @@ class Login : Fragment(R.layout.login_fragment){
         Timber.d("Login onViewCreated ${hashCode()}")
     }
 
+    override fun onResume() {
+        super.onResume()
+        Timber.d("Login onResume ${hashCode()}")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.d("Login onPause ${hashCode()}")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.d("Login onStop ${hashCode()}")
+    }
+
     override fun onDestroyView()
     {
         super.onDestroyView()

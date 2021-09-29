@@ -43,6 +43,7 @@
             android:backgroundTint="@color/buttom_login_color"
             android:fontFamily="sans-serif-thin"
             android:text="@string/onboaring_fragment_login_button"
+            android:onClick="onClickStart"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
