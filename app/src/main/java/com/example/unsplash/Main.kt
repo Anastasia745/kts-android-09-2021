@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,7 +15,7 @@ import timber.log.Timber
 
 class Main : Fragment(R.layout.fragment_main) {
 
-    val defaultItems = List(20) {
+    /*val defaultItems = List(20) {
         ItemMain(
             imgId = R.drawable.img1,
             author = "Автор: Гнибеда Анастасия",
@@ -44,5 +45,31 @@ class Main : Fragment(R.layout.fragment_main) {
 
     private fun setDefaultItems() {
         mainAdapter.setItems(defaultItems)
+    }*/
+    private val viewModel: MainViewModel by viewModels()
+
+    private val binding by viewBinding(FragmentMainBinding::bind)
+    private var photoAdapter: MainAdapter by autoCleared()
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initList()
+        bindViewModel()
+    }
+
+    private fun initList() {
+        photoAdapter = MainAdapter()
+        binding.list.apply {
+            adapter = photoAdapter
+            layoutManager = LinearLayoutManager(requireContext())
+            setHasFixedSize(true)
+        }
+    }
+
+    private fun bindViewModel() {
+        viewModel.userList.observe(viewLifecycleOwner, Observer { photoAdapter.items = it })
+        viewModel.search(
+            page = 1
+        )
     }
 }

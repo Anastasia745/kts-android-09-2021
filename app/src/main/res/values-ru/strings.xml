@@ -10,4 +10,5 @@
     <string name="login_fragment_input_password_hint">Пароль</string>
     <string name="login_fragment_signIn_button">Войти</string>
     <string name="main_fragment_main">Главная</string>
+    <string name="auth_canceled">Аутентификация не выполнена</string>
 </resources>

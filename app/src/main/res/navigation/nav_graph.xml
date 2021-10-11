@@ -16,10 +16,20 @@
             app:destination="@id/main"
             app:popUpTo="@id/login"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_OAuthFragment"
+            app:destination="@id/OAuthFragment"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/main"
         android:name="com.example.unsplash.Main"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/OAuthFragment"
+        android:name="com.example.unsplash.OAuthFragment"
+        android:label="fragment_o_auth"
+        tools:layout="@layout/fragment_o_auth" />
 </navigation>
