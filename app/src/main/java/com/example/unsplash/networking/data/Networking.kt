@@ -11,8 +11,8 @@ import timber.log.Timber
 
 object Networking {
 
-    private var okhttpClient: OkHttpClient =
-        OkHttpClient.Builder().addInterceptor(Interceptor { chain ->
+    private var okhttpClient: OkHttpClient = OkHttpClient.Builder()
+        .addInterceptor(Interceptor { chain ->
             val original = chain.request()
             val builder = original.newBuilder()
 
