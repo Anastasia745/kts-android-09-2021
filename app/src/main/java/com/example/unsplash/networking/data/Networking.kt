@@ -1,6 +1,5 @@
 package com.example.unsplash.networking.data
 
-import com.example.unsplash.networking.data.UnsplashApi
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
