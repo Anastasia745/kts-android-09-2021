@@ -1,6 +1,6 @@
 package com.example.unsplash.networking.data
 
-import com.example.unsplash.networking.data.models.Photo
+import com.example.unsplash.networking.data.models_.Photo
 
 class ListPhotos {
 

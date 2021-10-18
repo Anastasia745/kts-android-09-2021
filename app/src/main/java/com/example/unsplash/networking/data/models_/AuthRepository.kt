@@ -1,4 +1,4 @@
-package com.example.unsplash.networking.data.models
+package com.example.unsplash.networking.data.models_
 
 import android.net.Uri
 import com.example.unsplash.networking.data.AuthConfig

@@ -1,14 +1,13 @@
 package com.example.unsplash
 
 import android.app.Application
-import android.util.Patterns
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.content.ContextCompat
 import net.openid.appauth.AuthorizationException
 import net.openid.appauth.TokenRequest
 import android.content.Intent
 import androidx.lifecycle.*
-import com.example.unsplash.networking.data.models.AuthRepository
+import com.example.unsplash.networking.data.models_.AuthRepository
 import com.example.unsplash.utils.SingleLiveEvent
 import net.openid.appauth.AuthorizationService
 
