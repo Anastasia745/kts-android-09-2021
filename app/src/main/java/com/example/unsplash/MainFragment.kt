@@ -13,39 +13,7 @@ import com.example.unsplash.databinding.FragmentMainBinding
 import ru.ktsstudio.lection3.utils.autoCleared
 import timber.log.Timber
 
-class Main : Fragment(R.layout.fragment_main) {
-
-    /*val defaultItems = List(20) {
-        ItemMain(
-            imgId = R.drawable.img1,
-            author = "Автор: Гнибеда Анастасия",
-            like_count = 100,
-        )
-    }
-
-    private val binding: FragmentMainBinding by viewBinding(FragmentMainBinding::bind)
-    private var mainAdapter: MainAdapter by autoCleared()
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initList()
-        setDefaultItems()
-    }
-
-    private fun initList() {
-        mainAdapter = MainAdapter()
-        with(binding.list) {
-            val orientation = RecyclerView.VERTICAL
-            adapter = mainAdapter
-            layoutManager = LinearLayoutManager(context, orientation, false)
-            addItemDecoration(DividerItemDecoration(context, orientation))
-            setHasFixedSize(true)
-        }
-    }
-
-    private fun setDefaultItems() {
-        mainAdapter.setItems(defaultItems)
-    }*/
+class MainFragment : Fragment(R.layout.fragment_main) {
     private val viewModel: MainViewModel by viewModels()
 
     private val binding by viewBinding(FragmentMainBinding::bind)

@@ -21,68 +21,36 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.unsplash.databinding.LoginFragmentBinding
 import com.example.unsplash.utils.toast
 
-class Login : Fragment(R.layout.login_fragment){
+class LoginFragment : Fragment(R.layout.login_fragment){
 
     private val loginViewModel: LoginViewModel by viewModels()
     private val binding by viewBinding(LoginFragmentBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val email = view.findViewById<TextInputEditText>(R.id.emailText)
-        val password = view.findViewById<TextInputEditText>(R.id.passwordText)
-        val signIn = view.findViewById<Button>(R.id.signIn)
-
-        email.addTextChangedListener {
-            loginViewModel.isValidForm(email.text,password.text)
-        }
-        password.addTextChangedListener {
-            loginViewModel.isValidForm(email.text,password.text)
-        }
-
-        loginViewModel.isValid.observe(viewLifecycleOwner) {
-            if(loginViewModel.isValid.value == true) {
-                signIn.isEnabled = true
-                signIn?.setBackgroundColor(Color.BLACK)
-            }
-            else
-            {
-                signIn.isEnabled = false
-                signIn?.setBackgroundColor(Color.GRAY)
-            }
-        }
-
-        signIn.setOnClickListener{
-            findNavController().navigate(R.id.action_login_to_main)
-        }
-        Timber.d("Login onViewCreated ${hashCode()}")
+        Timber.d("LoginFragment onViewCreated ${hashCode()}")
     }
 
     override fun onResume() {
         super.onResume()
-        Timber.d("Login onResume ${hashCode()}")
+        Timber.d("LoginFragment onResume ${hashCode()}")
     }
 
     override fun onPause() {
         super.onPause()
-        Timber.d("Login onPause ${hashCode()}")
+        Timber.d("LoginFragment onPause ${hashCode()}")
     }
 
     override fun onStop() {
         super.onStop()
-        Timber.d("Login onStop ${hashCode()}")
+        Timber.d("LoginFragment onStop ${hashCode()}")
     }
 
     override fun onDestroyView()
     {
         super.onDestroyView()
-        Timber.d("Login onDestroyView ${hashCode()}")
+        Timber.d("LoginFragment onDestroyView ${hashCode()}")
     }
-
-
-
-
-
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -111,7 +79,7 @@ class Login : Fragment(R.layout.login_fragment){
         loginViewModel.toastLiveData.observe(viewLifecycleOwner, ::toast)
 
         loginViewModel.authSuccessLiveData.observe(viewLifecycleOwner) {
-            findNavController().navigate(R.id.action_login_to_OAuthFragment)
+            findNavController().navigate(R.id.action_login_to_main)
         }
     }
 

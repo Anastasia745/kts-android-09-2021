@@ -10,11 +10,11 @@ import android.widget.Button
 import androidx.navigation.Navigation
 import timber.log.Timber
 
-class Onboarding : Fragment() {
+class OnboardingFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Timber.d("Onboarding onCreate ${hashCode()}")
+        Timber.d("OnboardingFragment onCreate ${hashCode()}")
     }
 
     override fun onCreateView(
@@ -22,29 +22,29 @@ class Onboarding : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        Timber.d("Onboarding onCreateView ${hashCode()}")
+        Timber.d("OnboardingFragment onCreateView ${hashCode()}")
         return inflater.inflate(R.layout.fragment_onboarding, container, false)
     }
 
     override fun onResume() {
         super.onResume()
-        Timber.d("Onboarding onResume ${hashCode()}")
+        Timber.d("OnboardingFragment onResume ${hashCode()}")
     }
 
     override fun onPause() {
         super.onPause()
-        Timber.d("Onboarding onPause ${hashCode()}")
+        Timber.d("OnboardingFragment onPause ${hashCode()}")
     }
 
     override fun onStop() {
         super.onStop()
-        Timber.d("Onboarding onStop ${hashCode()}")
+        Timber.d("OnboardingFragment onStop ${hashCode()}")
     }
 
     override fun onDestroyView()
     {
         super.onDestroyView()
-        Timber.d("Onboarding onDestroyView ${hashCode()}")
+        Timber.d("OnboardingFragment onDestroyView ${hashCode()}")
     }
 
 }

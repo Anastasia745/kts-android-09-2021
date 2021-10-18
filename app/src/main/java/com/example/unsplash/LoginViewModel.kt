@@ -22,22 +22,6 @@ class LoginViewModel(application: Application, state: SavedStateHandle) : Androi
     private val authSuccessLiveEvent = SingleLiveEvent<Unit>()
 
 
-
-    companion object {
-        private val KEY = "activeButton"
-    }
-    private val savedStateHandle = false
-
-    var isValid = state.getLiveData(KEY,savedStateHandle)
-
-    fun isValidForm(email : CharSequence?, password : CharSequence?){
-        val isValidEmail = email != null && Patterns.EMAIL_ADDRESS.matcher(email).matches()
-        val isValidPassword = password != null && password.length >= 8
-        isValid.value = isValidEmail && isValidPassword
-    }
-
-
-
     val openAuthPageLiveData: LiveData<Intent>
         get() = openAuthPageLiveEvent
 

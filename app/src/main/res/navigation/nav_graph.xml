@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/login"
-        android:name="com.example.unsplash.Login"
+        android:name="com.example.unsplash.LoginFragment"
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/main"
-        android:name="com.example.unsplash.Main"
+        android:name="com.example.unsplash.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
     <fragment

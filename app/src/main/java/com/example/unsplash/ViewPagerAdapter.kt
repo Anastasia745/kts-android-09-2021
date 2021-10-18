@@ -13,16 +13,16 @@ class ViewPagerAdapter(
         when (position % 3) {
             0 -> {
                 //  val homeFragment: HomeFragment = HomeFragment()
-                return Onboarding()
+                return OnboardingFragment()
             }
             1 -> {
-                return Onboarding2()
+                return OnboardingFragment2()
             }
             2 -> {
                 // val movieFragment = MovieFragment()
-                return Onboarding3()
+                return OnboardingFragment3()
             }
-            else -> return Onboarding()
+            else -> return OnboardingFragment()
         }
     }
 }
