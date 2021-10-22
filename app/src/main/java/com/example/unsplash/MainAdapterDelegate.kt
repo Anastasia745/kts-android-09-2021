@@ -37,7 +37,7 @@ class MainAdapterDelegate: AbsListItemAdapterDelegate<Photo, Photo, MainAdapterD
 
             //coil, picasso
             Glide.with(itemView)
-                .load(item.urls.raw)
+                .load(item.urls)
                 .transform(CircleCrop())
                 .placeholder(R.drawable.img1)
                 .into(binding.ivImg)

@@ -1,20 +1,28 @@
 package com.example.unsplash
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import android.app.Application
+import androidx.lifecycle.*
 import com.example.unsplash.networking.data.IncorrectFormException
 import com.example.unsplash.networking.data.ListPhotos
 import com.example.unsplash.networking.data.PhotoRepository
 
-import com.example.unsplash.networking.data.models.Urls
+//import com.example.unsplash.networking.data.models.Urls
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
-class MainViewModel: ViewModel() {
+class MainViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val datastoreRepository = DatastoreRepository(application)
+
+    fun save() {
+        viewModelScope.launch {
+            datastoreRepository.save()
+        }
+    }
+
 
     private val repository = ListPhotos()
     private val photoRepository = PhotoRepository()
@@ -53,8 +61,9 @@ class MainViewModel: ViewModel() {
         id: Long,
         //photo_id: Long,
         alt_description: String,
-        urls: Urls,
-        raw: String,
+        /*urls: Urls,
+        raw: String,*/
+        urls: String,
         likes: Int,
         liked_by_user: Boolean
     ) {
@@ -63,8 +72,9 @@ class MainViewModel: ViewModel() {
             id = id,
             //photo_id = photo_id,
             alt_description = alt_description,
+            /*urls = urls,
+            raw = raw,*/
             urls = urls,
-            raw = raw,
             likes = likes,
             liked_by_user = liked_by_user
         )

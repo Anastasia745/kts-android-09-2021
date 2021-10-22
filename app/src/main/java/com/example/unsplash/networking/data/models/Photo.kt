@@ -18,15 +18,15 @@ data class Photo(
     @ColumnInfo(name = PurchaseContract.Columns.ALT_DESCRIPTION)
     val alt_description: String,
     @ColumnInfo(name = PurchaseContract.Columns.URLS)
-    val urls: Urls,
+    val urls: String,
     @ColumnInfo(name = PurchaseContract.Columns.RAW)
-    val raw: String,
-    @ColumnInfo(name = PurchaseContract.Columns.LIKES)
+    /*val raw: String,
+    @ColumnInfo(name = PurchaseContract.Columns.LIKES)*/
     val likes: Int,
     @ColumnInfo(name = PurchaseContract.Columns.LIKED_BY_USER)
     val liked_by_user: Boolean)
 
-data class Urls(
+/*data class Urls(
     @ColumnInfo(name = PurchaseContract.Columns.RAW)
     val raw: String
-)
+)*/

@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.unsplash.databinding.FragmentMainBinding
-import com.example.unsplash.networking.data.models.Urls
+//import com.example.unsplash.networking.data.models.Urls
 import ru.ktsstudio.lection3.utils.autoCleared
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -22,7 +22,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         initList()
         bindViewModel()
-
+        viewModel.save()
     }
 
     private fun initList() {
@@ -50,8 +50,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         viewModel.save(
             id = photoAdapter.items[i].id.toLong(),
             alt_description = photoAdapter.items[i].alt_description,
-            raw = photoAdapter.items[i].urls.raw,
-            urls = Urls(raw = String()),
+            /*raw = photoAdapter.items[i].urls.raw,
+            urls = Urls(raw = String()),*/
+            urls = photoAdapter.items[i].urls,
             likes = photoAdapter.items[i].likes,
             liked_by_user = photoAdapter.items[i].likedByUser
         )

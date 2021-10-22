@@ -9,14 +9,14 @@ data class Photo(
     val id: String,
     @Json(name = "alt_description")
     val alt_description: String,
-    val urls: Urls,
+    val urls: String,
     @Json(name = "likes")
     val likes: Int,
     @Json(name = "liked_by_user")
     val likedByUser: Boolean
 )
 
-data class Urls(
+/*data class Urls(
     @Json(name = "raw")
     val raw: String
-)
+)*/

@@ -1,5 +1,6 @@
 package com.example.unsplash
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import androidx.lifecycle.ViewModelProvider
@@ -11,6 +12,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
@@ -22,6 +26,7 @@ import com.example.unsplash.databinding.LoginFragmentBinding
 import com.example.unsplash.utils.toast
 
 class LoginFragment : Fragment(R.layout.login_fragment){
+
 
     private val loginViewModel: LoginViewModel by viewModels()
     private val binding by viewBinding(LoginFragmentBinding::bind)
