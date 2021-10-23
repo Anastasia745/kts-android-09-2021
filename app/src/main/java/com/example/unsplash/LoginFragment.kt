@@ -22,6 +22,7 @@ import net.openid.appauth.AuthorizationException
 import net.openid.appauth.AuthorizationResponse
 import timber.log.Timber
 import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.unsplash.DatastoreRepository.Companion.KEY
 import com.example.unsplash.databinding.LoginFragmentBinding
 import com.example.unsplash.utils.toast
 
@@ -34,6 +35,10 @@ class LoginFragment : Fragment(R.layout.login_fragment){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Timber.d("LoginFragment onViewCreated ${hashCode()}")
+        if(KEY.equals("yes"))
+        {
+            findNavController().navigate(R.id.action_login_to_main)
+        }
     }
 
     override fun onResume() {
@@ -78,6 +83,8 @@ class LoginFragment : Fragment(R.layout.login_fragment){
     }
 
     private fun bindViewModel() {
+
+
         binding.OAuthButton.setOnClickListener { loginViewModel.openLoginPage() }
         loginViewModel.loadingLiveData.observe(viewLifecycleOwner, ::updateIsLoading)
         loginViewModel.openAuthPageLiveData.observe(viewLifecycleOwner, ::openAuthPage)
