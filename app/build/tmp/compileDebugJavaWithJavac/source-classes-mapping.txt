@@ -1,0 +1,30 @@
+com/example/unsplash/databinding/FragmentOnboardingBinding.java
+ com.example.unsplash.databinding.FragmentOnboardingBinding
+com/example/unsplash/databinding/ActivityMainBinding.java
+ com.example.unsplash.databinding.ActivityMainBinding
+com/example/unsplash/networking/data/db/PhotoDao_Impl.java
+ com.example.unsplash.networking.data.db.PhotoDao_Impl
+ com.example.unsplash.networking.data.db.PhotoDao_Impl$1
+ com.example.unsplash.networking.data.db.PhotoDao_Impl$2
+ com.example.unsplash.networking.data.db.PhotoDao_Impl$3
+ com.example.unsplash.networking.data.db.PhotoDao_Impl$4
+com/example/unsplash/databinding/ActivitySecondBinding.java
+ com.example.unsplash.databinding.ActivitySecondBinding
+com/example/unsplash/BuildConfig.java
+ com.example.unsplash.BuildConfig
+com/example/unsplash/databinding/FragmentOnboarding2Binding.java
+ com.example.unsplash.databinding.FragmentOnboarding2Binding
+com/example/unsplash/databinding/LoginFragmentBinding.java
+ com.example.unsplash.databinding.LoginFragmentBinding
+com/example/unsplash/databinding/FragmentMainBinding.java
+ com.example.unsplash.databinding.FragmentMainBinding
+com/example/unsplash/databinding/ItemMainBinding.java
+ com.example.unsplash.databinding.ItemMainBinding
+com/example/unsplash/utils/SingleLiveEvent.java
+ com.example.unsplash.utils.SingleLiveEvent
+ com.example.unsplash.utils.SingleLiveEvent$1
+com/example/unsplash/networking/data/db/ApplicationDatabase_Impl.java
+ com.example.unsplash.networking.data.db.ApplicationDatabase_Impl
+ com.example.unsplash.networking.data.db.ApplicationDatabase_Impl$1
+com/example/unsplash/databinding/FragmentOnboarding3Binding.java
+ com.example.unsplash.databinding.FragmentOnboarding3Binding
