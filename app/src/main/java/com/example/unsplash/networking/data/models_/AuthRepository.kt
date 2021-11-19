@@ -1,6 +1,7 @@
 package com.example.unsplash.networking.data.models_
 
 import android.net.Uri
+import com.example.unsplash.networking.data.Auth
 import com.example.unsplash.networking.data.AuthConfig
 import net.openid.appauth.*
 
@@ -20,6 +21,7 @@ class AuthRepository {
             AuthConfig.RESPONSE_TYPE,
             redirectUri
         )
+            .setCodeVerifier(null)
             .setScope(AuthConfig.SCOPE)
             .build()
     }
@@ -33,8 +35,8 @@ class AuthRepository {
         authService.performTokenRequest(tokenRequest, getClientAuthentication()) { response, ex ->
             when {
                 response != null -> {
-
-                    val accessToken = response.accessToken.orEmpty()
+                    Auth.token = response.accessToken.orEmpty()
+                    //val accessToken = response.accessToken.orEmpty()
                     onComplete()
                 }
                 else -> onError()

@@ -24,6 +24,7 @@ class OnboardingFragment : Fragment() {
     ): View? {
 
         Timber.d("OnboardingFragment onCreateView ${hashCode()}")
+        DatastoreRepository.KEY to "no"
         return inflater.inflate(R.layout.fragment_onboarding, container, false)
     }
 

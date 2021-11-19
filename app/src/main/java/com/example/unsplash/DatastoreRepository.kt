@@ -32,7 +32,7 @@ class DatastoreRepository(
 
     companion object {
         private const val DATASTORE_NAME = "datastore"
-        public val KEY = stringPreferencesKey("key")
+        val KEY = stringPreferencesKey("key")
     }
 
 }
