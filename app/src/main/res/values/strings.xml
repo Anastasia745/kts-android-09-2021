@@ -11,8 +11,9 @@
     <string name="login_fragment_signIn_button">SignIn</string>
     <string name="main_fragment_main">Main</string>
     <string name="auth_canceled">Authentication failed</string>
+    <string name="main_button_to_photos_list">Photos</string>
+    <string name="main_button_to_collections_list">Collections</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="user_add_error_incorrect_format">Incorrect form</string>
-    <string name="user_add_error_default">Save error</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

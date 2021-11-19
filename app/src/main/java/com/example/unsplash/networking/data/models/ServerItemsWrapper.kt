@@ -1,4 +1,4 @@
-package com.example.unsplash.networking.data.models_
+package com.example.unsplash.networking.data.models
 
 import com.squareup.moshi.JsonClass
 

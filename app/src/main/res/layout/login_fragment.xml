@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".LoginFragment">
+    tools:context=".fragments.LoginFragment">
 
 
     <TextView
@@ -19,18 +19,18 @@
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.323" />
 
     <Button
         android:id="@+id/OAuthButton"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/purple_500"
-        android:text="OAuth вход"
+        android:backgroundTint="@color/black"
+        android:text="@string/login_fragment_signIn_button"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

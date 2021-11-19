@@ -6,18 +6,16 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.example.unsplash.DatastoreRepository.Companion.KEY
+import com.example.unsplash.fragments.OnboardingFragment
+import com.example.unsplash.fragments.OnboardingFragment2
+import com.example.unsplash.fragments.OnboardingFragment3
+import com.example.unsplash.networking.adapter.ViewPagerAdapter
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if(KEY.equals("yes"))
-        {
-            setContentView(R.layout.activity_second)
-        }
-        else
-            setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
         Timber.d("MainActivity onCreate ${hashCode()}")
 

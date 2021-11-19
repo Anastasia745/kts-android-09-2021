@@ -11,6 +11,6 @@
     <string name="login_fragment_signIn_button">Войти</string>
     <string name="main_fragment_main">Главная</string>
     <string name="auth_canceled">Аутентификация не выполнена</string>
-    <string name="user_add_error_incorrect_format">Неверная форма</string>
-    <string name="user_add_error_default">Ошибка сохранения</string>
+    <string name="main_button_to_photos_list">Фото</string>
+    <string name="main_button_to_collections_list">Коллекции</string>
 </resources>

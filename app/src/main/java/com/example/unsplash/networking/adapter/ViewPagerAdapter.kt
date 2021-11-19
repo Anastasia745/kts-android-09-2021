@@ -1,7 +1,11 @@
-package com.example.unsplash
+package com.example.unsplash.networking.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.unsplash.MainActivity
+import com.example.unsplash.fragments.OnboardingFragment
+import com.example.unsplash.fragments.OnboardingFragment2
+import com.example.unsplash.fragments.OnboardingFragment3
 
 class ViewPagerAdapter(
     val items: ArrayList<Fragment>,

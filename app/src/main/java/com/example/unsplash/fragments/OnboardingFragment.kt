@@ -1,14 +1,11 @@
-package com.example.unsplash
+package com.example.unsplash.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.Navigation
-import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.unsplash.R
 import timber.log.Timber
 
 class OnboardingFragment : Fragment() {
@@ -24,7 +21,6 @@ class OnboardingFragment : Fragment() {
     ): View? {
 
         Timber.d("OnboardingFragment onCreateView ${hashCode()}")
-        DatastoreRepository.KEY to "no"
         return inflater.inflate(R.layout.fragment_onboarding, container, false)
     }
 

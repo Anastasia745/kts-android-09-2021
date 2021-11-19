@@ -1,4 +1,4 @@
-package com.example.unsplash
+package com.example.unsplash.utils
 import android.view.View
 
 /*

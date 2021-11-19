@@ -1,33 +1,22 @@
-package com.example.unsplash
+package com.example.unsplash.fragments
 
-import android.content.Context
 import android.content.Intent
-import android.graphics.Color
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
 import androidx.core.view.isVisible
-import androidx.core.widget.addTextChangedListener
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.preferencesDataStore
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.textfield.TextInputEditText
 import net.openid.appauth.AuthorizationException
 import net.openid.appauth.AuthorizationResponse
 import timber.log.Timber
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.unsplash.DatastoreRepository.Companion.KEY
+import com.example.unsplash.viewModel.LoginViewModel
+import com.example.unsplash.R
 import com.example.unsplash.databinding.LoginFragmentBinding
 import com.example.unsplash.utils.toast
 
 class LoginFragment : Fragment(R.layout.login_fragment){
-
 
     private val loginViewModel: LoginViewModel by viewModels()
     private val binding by viewBinding(LoginFragmentBinding::bind)
@@ -35,10 +24,6 @@ class LoginFragment : Fragment(R.layout.login_fragment){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Timber.d("LoginFragment onViewCreated ${hashCode()}")
-        if(KEY.equals("yes"))
-        {
-            findNavController().navigate(R.id.action_login_to_main)
-        }
     }
 
     override fun onResume() {
@@ -83,8 +68,6 @@ class LoginFragment : Fragment(R.layout.login_fragment){
     }
 
     private fun bindViewModel() {
-
-
         binding.OAuthButton.setOnClickListener { loginViewModel.openLoginPage() }
         loginViewModel.loadingLiveData.observe(viewLifecycleOwner, ::updateIsLoading)
         loginViewModel.openAuthPageLiveData.observe(viewLifecycleOwner, ::openAuthPage)
