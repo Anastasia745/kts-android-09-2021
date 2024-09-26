@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Unsplash</string>
+    <string name="onboaring_fragment_welcome_text">Добро пожаловать!</string>
+    <string name="onboaring_fragment_login_button">ВОЙТИ</string>
+    <string name="onboaring2_fragment_text">Интернет-источник свободно используемых изображений.\nВо всем мире его поддерживают создатели.</string>
+    <string name="onboaring3_fragment_title">Бесплатные фотографии без печати высокого разрешения</string>
+    <string name="onboaring3_fragment_text">В Unsplash есть более миллиона бесплатных фотографий с высоким разрешением. Все фотографии здесь можно бесплатно скачать и использовать по лицензии Unsplash.</string>
+    <string name="login_fragment_header">Вход</string>
+    <string name="login_fragment_input_email_hint">Email</string>
+    <string name="login_fragment_input_password_hint">Пароль</string>
+    <string name="login_fragment_signIn_button">Войти</string>
+    <string name="main_fragment_main">Главная</string>
+</resources>
